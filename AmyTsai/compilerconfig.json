@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFile": "Content/css/About.css",
+    "inputFile": "Content/css/About.scss"
+  },
+  {
+    "outputFile": "Content/css/Contact.css",
+    "inputFile": "Content/css/Contact.scss"
+  },
+  {
+    "outputFile": "Content/css/Index.css",
+    "inputFile": "Content/css/Index.scss"
+  },
+  {
+    "outputFile": "Content/css/Style.css",
+    "inputFile": "Content/css/Style.scss"
+  },
+  {
+    "outputFile": "Content/css/Works.css",
+    "inputFile": "Content/css/Works.scss"
+  }
+]

@@ -1,0 +1,421 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6AE00399-A4C6-4823-9922-B98CAE64370C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AmyTsai</RootNamespace>
+    <AssemblyName>AmyTsai</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\About.css">
+      <DependentUpon>About.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\css\About.min.css">
+      <DependentUpon>About.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Contact.css">
+      <DependentUpon>Contact.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Contact.min.css">
+      <DependentUpon>Contact.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Index.css">
+      <DependentUpon>Index.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Index.min.css">
+      <DependentUpon>Index.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Style.css">
+      <DependentUpon>Style.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Style.min.css">
+      <DependentUpon>Style.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Works.css">
+      <DependentUpon>Works.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Works.min.css">
+      <DependentUpon>Works.css</DependentUpon>
+    </Content>
+    <Content Include="Content\ekko-lightbox.css" />
+    <Content Include="Content\ekko-lightbox.min.css" />
+    <Content Include="Content\image\About-timeline.png" />
+    <Content Include="Content\image\About-title1.png" />
+    <Content Include="Content\image\About-title2.png" />
+    <Content Include="Content\image\Amy-comic.png" />
+    <Content Include="Content\image\Amy-comic2.png" />
+    <Content Include="Content\image\Amy-comic3.png" />
+    <Content Include="Content\image\Amy-photo.png" />
+    <Content Include="Content\image\Contact-line.png" />
+    <Content Include="Content\image\Contact-post.png" />
+    <Content Include="Content\image\Contact-title.png" />
+    <Content Include="Content\image\design-music1.png" />
+    <Content Include="Content\image\design-music10.png" />
+    <Content Include="Content\image\design-music11.png" />
+    <Content Include="Content\image\design-music12.png" />
+    <Content Include="Content\image\design-music13.png" />
+    <Content Include="Content\image\design-music14.png" />
+    <Content Include="Content\image\design-music15.png" />
+    <Content Include="Content\image\design-music16.png" />
+    <Content Include="Content\image\design-music17.png" />
+    <Content Include="Content\image\design-music18.png" />
+    <Content Include="Content\image\design-music19.png" />
+    <Content Include="Content\image\design-music2.png" />
+    <Content Include="Content\image\design-music20.png" />
+    <Content Include="Content\image\design-music21.png" />
+    <Content Include="Content\image\design-music22.png" />
+    <Content Include="Content\image\design-music23.png" />
+    <Content Include="Content\image\design-music24.png" />
+    <Content Include="Content\image\design-music25.png" />
+    <Content Include="Content\image\design-music26.png" />
+    <Content Include="Content\image\design-music27.png" />
+    <Content Include="Content\image\design-music28.png" />
+    <Content Include="Content\image\design-music29.png" />
+    <Content Include="Content\image\design-music3.png" />
+    <Content Include="Content\image\design-music30.png" />
+    <Content Include="Content\image\design-music31.png" />
+    <Content Include="Content\image\design-music32.png" />
+    <Content Include="Content\image\design-music33.png" />
+    <Content Include="Content\image\design-music34.png" />
+    <Content Include="Content\image\design-music35.png" />
+    <Content Include="Content\image\design-music36.png" />
+    <Content Include="Content\image\design-music37.png" />
+    <Content Include="Content\image\design-music38.png" />
+    <Content Include="Content\image\design-music39.png" />
+    <Content Include="Content\image\design-music4.png" />
+    <Content Include="Content\image\design-music5.png" />
+    <Content Include="Content\image\design-music6.png" />
+    <Content Include="Content\image\design-music7.png" />
+    <Content Include="Content\image\design-music8.png" />
+    <Content Include="Content\image\design-music9.png" />
+    <Content Include="Content\image\design-NBS1.png" />
+    <Content Include="Content\image\design-NBS10.png" />
+    <Content Include="Content\image\design-NBS11.png" />
+    <Content Include="Content\image\design-NBS12.png" />
+    <Content Include="Content\image\design-NBS13.png" />
+    <Content Include="Content\image\design-NBS14.png" />
+    <Content Include="Content\image\design-NBS2.png" />
+    <Content Include="Content\image\design-NBS3.png" />
+    <Content Include="Content\image\design-NBS4.png" />
+    <Content Include="Content\image\design-NBS5.png" />
+    <Content Include="Content\image\design-NBS6.png" />
+    <Content Include="Content\image\design-NBS7.png" />
+    <Content Include="Content\image\design-NBS8.png" />
+    <Content Include="Content\image\design-NBS9.png" />
+    <Content Include="Content\image\design-self1.jpg" />
+    <Content Include="Content\image\design-self10.jpg" />
+    <Content Include="Content\image\design-self11.jpg" />
+    <Content Include="Content\image\design-self12.jpg" />
+    <Content Include="Content\image\design-self13.jpg" />
+    <Content Include="Content\image\design-self14.jpg" />
+    <Content Include="Content\image\design-self15.jpg" />
+    <Content Include="Content\image\design-self16.jpg" />
+    <Content Include="Content\image\design-self17.jpg" />
+    <Content Include="Content\image\design-self18.jpg" />
+    <Content Include="Content\image\design-self19.jpg" />
+    <Content Include="Content\image\design-self2.jpg" />
+    <Content Include="Content\image\design-self20.jpg" />
+    <Content Include="Content\image\design-self21.jpg" />
+    <Content Include="Content\image\design-self22.jpg" />
+    <Content Include="Content\image\design-self23.jpg" />
+    <Content Include="Content\image\design-self24.jpg" />
+    <Content Include="Content\image\design-self25.jpg" />
+    <Content Include="Content\image\design-self26.jpg" />
+    <Content Include="Content\image\design-self27.jpg" />
+    <Content Include="Content\image\design-self28.jpg" />
+    <Content Include="Content\image\design-self29.jpg" />
+    <Content Include="Content\image\design-self3.jpg" />
+    <Content Include="Content\image\design-self30.jpg" />
+    <Content Include="Content\image\design-self31.jpg" />
+    <Content Include="Content\image\design-self32.jpg" />
+    <Content Include="Content\image\design-self33.png" />
+    <Content Include="Content\image\design-self34.png" />
+    <Content Include="Content\image\design-self35.png" />
+    <Content Include="Content\image\design-self36.png" />
+    <Content Include="Content\image\design-self37.png" />
+    <Content Include="Content\image\design-self38.png" />
+    <Content Include="Content\image\design-self39.png" />
+    <Content Include="Content\image\design-self4.jpg" />
+    <Content Include="Content\image\design-self40.png" />
+    <Content Include="Content\image\design-self41.png" />
+    <Content Include="Content\image\design-self42.png" />
+    <Content Include="Content\image\design-self43.png" />
+    <Content Include="Content\image\design-self44.png" />
+    <Content Include="Content\image\design-self45.png" />
+    <Content Include="Content\image\design-self46.png" />
+    <Content Include="Content\image\design-self47.png" />
+    <Content Include="Content\image\design-self48.png" />
+    <Content Include="Content\image\design-self49.png" />
+    <Content Include="Content\image\design-self5.jpg" />
+    <Content Include="Content\image\design-self50.png" />
+    <Content Include="Content\image\design-self51.png" />
+    <Content Include="Content\image\design-self52.png" />
+    <Content Include="Content\image\design-self53.png" />
+    <Content Include="Content\image\design-self54.png" />
+    <Content Include="Content\image\design-self55.png" />
+    <Content Include="Content\image\design-self56.png" />
+    <Content Include="Content\image\design-self57.png" />
+    <Content Include="Content\image\design-self58.png" />
+    <Content Include="Content\image\design-self59.png" />
+    <Content Include="Content\image\design-self6.jpg" />
+    <Content Include="Content\image\design-self60.png" />
+    <Content Include="Content\image\design-self7.jpg" />
+    <Content Include="Content\image\design-self8.JPG" />
+    <Content Include="Content\image\design-self9.jpg" />
+    <Content Include="Content\image\design1.png" />
+    <Content Include="Content\image\design10.png" />
+    <Content Include="Content\image\design11.png" />
+    <Content Include="Content\image\design12.png" />
+    <Content Include="Content\image\design13.png" />
+    <Content Include="Content\image\design14.png" />
+    <Content Include="Content\image\design15.png" />
+    <Content Include="Content\image\design16.png" />
+    <Content Include="Content\image\design17.png" />
+    <Content Include="Content\image\design18.png" />
+    <Content Include="Content\image\design19.png" />
+    <Content Include="Content\image\design2.png" />
+    <Content Include="Content\image\design20.png" />
+    <Content Include="Content\image\design21.png" />
+    <Content Include="Content\image\design22.png" />
+    <Content Include="Content\image\design23.png" />
+    <Content Include="Content\image\design24.png" />
+    <Content Include="Content\image\design3.png" />
+    <Content Include="Content\image\design4.png" />
+    <Content Include="Content\image\design5.png" />
+    <Content Include="Content\image\design6.png" />
+    <Content Include="Content\image\design7.png" />
+    <Content Include="Content\image\design8.png" />
+    <Content Include="Content\image\design9.png" />
+    <Content Include="Content\image\Health-files.png" />
+    <Content Include="Content\image\Home-intro.png" />
+    <Content Include="Content\image\Leadership-board.png" />
+    <Content Include="Content\image\Left-menu-hover.png" />
+    <Content Include="Content\image\Left-menu.png" />
+    <Content Include="Content\image\Menu-hover.png" />
+    <Content Include="Content\image\Nanning-bidding-system.png" />
+    <Content Include="Content\image\Nanning-system.png" />
+    <Content Include="Content\image\Officlial-website1.png" />
+    <Content Include="Content\image\Officlial-website2.png" />
+    <Content Include="Content\image\Self-system1.png" />
+    <Content Include="Content\image\Self-system2.png" />
+    <Content Include="Content\image\Self-system3.png" />
+    <Content Include="Content\image\Weather_cloudy.png" />
+    <Content Include="Content\image\Weather_cloudynight.png" />
+    <Content Include="Content\image\Weather_rainy.png" />
+    <Content Include="Content\image\Weather_sunny.png" />
+    <Content Include="Content\image\Weather_sunset.png" />
+    <Content Include="Content\image\Weather_Thunderstorm.png" />
+    <Content Include="Content\image\Website1.png" />
+    <Content Include="Content\image\Website10.png" />
+    <Content Include="Content\image\Website11.png" />
+    <Content Include="Content\image\Website12.png" />
+    <Content Include="Content\image\Website13.png" />
+    <Content Include="Content\image\Website14.png" />
+    <Content Include="Content\image\Website15.png" />
+    <Content Include="Content\image\Website16.png" />
+    <Content Include="Content\image\Website17.png" />
+    <Content Include="Content\image\Website18.png" />
+    <Content Include="Content\image\Website19.png" />
+    <Content Include="Content\image\Website2.png" />
+    <Content Include="Content\image\Website20.png" />
+    <Content Include="Content\image\Website3.png" />
+    <Content Include="Content\image\Website4.png" />
+    <Content Include="Content\image\Website5.png" />
+    <Content Include="Content\image\Website6.png" />
+    <Content Include="Content\image\Website7.png" />
+    <Content Include="Content\image\Website8.png" />
+    <Content Include="Content\image\Website9.png" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\site\contact.js" />
+    <Content Include="Scripts\ekko-lightbox.js" />
+    <Content Include="Scripts\ekko-lightbox.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\css\Style.scss" />
+    <Content Include="Content\css\About.scss" />
+    <Content Include="Content\css\Works.scss" />
+    <Content Include="Content\css\Contact.scss" />
+    <Content Include="Content\css\Index.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="Json\design.json" />
+    <Content Include="Json\website.json" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\site\Works.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\vue.js" />
+    <Content Include="Scripts\vue.min.js" />
+    <Content Include="Views\Index.html" />
+    <Content Include="Views\test.html" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3600</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3600/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
