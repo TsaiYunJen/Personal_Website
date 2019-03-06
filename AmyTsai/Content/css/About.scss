@@ -1,0 +1,87 @@
+﻿@import "Style.scss";
+$about-title: #E27F24;
+$certificate-title: #3AAA31;
+
+.timeline {
+    width: 84%;
+    margin: 0 auto;
+}
+
+.about-name {
+    color: $about-title;
+    font-weight: bold;
+}
+
+.about-desrc {
+    font-size: $font-size;
+    font-weight: bold;
+}
+
+.about-downarea {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.skill {
+    font-size: $font-size;
+    font-weight: bold;
+    width: 90%;
+    margin: 2% auto 0;
+
+    li {
+        display: flex;
+        align-items: center;
+
+        span {
+            &:nth-child(1) {
+                width: 30%;
+                display:inline-block;
+            }
+
+            &:nth-child(2) {
+                background: #3169AC;
+                height: 5px;
+                border-radius: 5px;
+                border: 1px solid #3169AC;
+                display:inline-block;
+            }
+        }
+    }
+}
+
+.certificate {
+    margin-top: 2%;
+
+    li {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+
+        span {
+            &:nth-child(1) {
+                color: #3aaa31;
+                width: 20%;
+                font-size: $font-size+ 2px;
+                display: inline-block;
+                font-weight: bold;
+            }
+
+            &:nth-child(2) {
+                width: 45%;
+                display: inline-block;
+                font-size: $font-size;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.AI, .PS, .CSS, .HT {
+    width: 70%;
+}
+.JS, .jQuery, .Ajax {
+    width: 60%;
+}
+.C, .Sass, .Vue,.WPF {
+    width: 30%;
+}

@@ -1,0 +1,80 @@
+﻿@import "Style.scss";
+$btn-color: #3169AC;
+
+.contact-title {
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.post {
+    position: absolute;
+    bottom: 15px;
+    left: -10px;
+}
+
+.contact {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 15%;
+
+    img {
+        position: absolute;
+        top: 5%;
+        left: 8%;
+        width: 85%;
+
+        @media screen and (max-width:1366px) {
+            width: 90%;
+        }
+
+        @media screen and (max-width:1280px) {
+            width: 95%;
+        }
+    }
+
+    form {
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        z-index: 5;
+    }
+}
+
+label {
+    width: 100px;
+    font-weight: bold;
+    font-size: $font-size;
+    @media screen and (max-width:1280px) {
+       font-size:$font-size/1.25;
+    }
+}
+
+input {
+    width: 75%;
+    margin: 15px auto;
+    border-width: 2px;
+    border-color: #333333;
+    vertical-align: middle;
+
+    @media screen and (max-width:1680px) {
+        width: 60%;
+        margin: 5px auto;
+    }
+
+    @media screen and (max-width:1440px) {
+        margin: 2px auto;
+    }
+}
+
+textarea {
+    @extend input;
+}
+
+input[type=button] {
+    border-width: 0;
+    background: $btn-color;
+    color: #fff;
+    width: 200px;
+    height: 50px
+}

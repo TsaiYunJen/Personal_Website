@@ -1,0 +1,104 @@
+﻿@import "Style.scss";
+
+.leftmenubg {
+    width: 24%;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    @media screen and (max-width:1440px) {
+        width:28%;
+    }
+}
+
+.works-area {
+    position: absolute;
+    width: 100%;
+    left: 5%;
+    top: 13%;
+}
+
+.nav {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+
+    @media screen and (max-width:1440px) {
+        width: 23%;
+    }
+
+    li {
+        width: 100%;
+
+        a {
+            font-size: $font-size +2px;
+            margin: 15px auto;
+
+            @media screen and (max-width:1680px) {
+                font-size: $font-size/1.1;
+                margin: 10px auto;
+            }
+
+            @media screen and (max-width:1440px) {
+                font-size: $font-size/1.25;
+                margin: 15px auto;
+            }
+
+            @media screen and (max-width:1280px) {
+                margin: 10px auto;
+            }
+        }
+    }
+}
+
+.nav-tabs {
+    border-bottom: 0px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    background: transparent;
+    border-color: transparent;
+    color: #fff;
+    background: url(../../Content/image/Left-menu-hover.png) 0 bottom no-repeat;
+    background-size: contain;
+}
+
+.tab-content {
+    width: 70%;
+    display: inline-block;
+    margin-left: 2%;
+    @media screen and (max-width:1440px) {
+        width:64%;
+        margin-left:4%;
+    }
+}
+
+.tab-pane p {
+    font-size: $font-size;
+    margin: 2% 10px;
+}
+.modal-dialog {
+    max-width:inherit;
+    max-width:50%;
+}
+.ekko-lightbox-container {
+    img {
+       display:block;
+       margin:0 auto;
+    }
+}
+.ekko-lightbox-container img {
+    max-width: 100%;
+}
+//website
+#Website {
+    .col-md-4 {
+        margin: 1% 0;
+    }
+}
+//wpf
+.self-system-img2 {
+    img {
+        width: 65%;
+    }
+}
