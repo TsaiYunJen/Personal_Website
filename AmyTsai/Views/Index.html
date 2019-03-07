@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Amy's website</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/css/Index.min.css" rel="stylesheet" />
+    <link href="../Content/css/About.min.css" rel="stylesheet" />
+    <link href="../Content/css/Works.min.css" rel="stylesheet" />
+    <link href="../Content/css/Contact.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/vue.min.js"></script>
+    <script src="../Scripts/ekko-lightbox.min.js"></script>
+    <script src="../Scripts/site/Works.js"></script>
+    <script src="../Scripts/site/contact.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="0">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#section-1">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-2">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-3">Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-4">Contact</a></li>
+        </ul>
+    </nav>
+    <!--home-->
+    <section id="section-1">
+        <div class="content container">
+            <div class="row home-area">
+                <div class="col home-photo">
+                    <img src="../Content/image/Amy-photo.png" class="img-fluid"/>
+                </div>
+                <div class="col home-intro">
+                    <p>
+                        Hi, I am Yun Jen, Tsai. I used to be learn Chinese education, but there is a chance let me know more about website part that I never think before.
+                        I like to try new thing and figure it out. So I think coding is suitable for me.
+                        My interest is reading books, watching dramas, listening music, and traveling. My motto is,”Work hard. Play hard.”
+                    </p>
+                    <img src="../Content/image/Home-intro.png" class="img-fluid" />
+                </div>
+            </div>
+            <div class="Amy-comic">
+                <img src="../Content/image/Amy-comic.png" />
+            </div>
+        </div>
+    </section>
+    <!--about-->
+    <section id="section-2">
+        <div class="content container">
+            <img src="../Content/image/About-timeline.png" class="img-fluid" />
+            <div class="row timeline">
+                <div class="col">
+                    <h4 class="about-name">National Taichung University</h4>
+                    <p class="about-desrc">Department of Language and Literacy Education</p>
+                </div>
+                <div class="col">
+                    <h4 class="about-name">Institute for Information Industry (III)</h4>
+                    <p class="about-desrc">Professional Training <br />Interactive UI/UX employment training class (560hr)</p>
+                </div>
+                <div class="col">
+                    <h4 class="about-name"> RedMedia Co., Ltd</h4>
+                    <p class="about-desrc">Web Front-end Designer</p>
+                </div>
+                <div class="col">
+                    <h4 class="about-name">Irhtech (Intelligent And Resourceful Healthcare)</h4>
+                    <p class="about-desrc">Front-end Developer</p>
+                </div>
+            </div>
+            <div class="row about-downarea">
+                <div class="col">
+                    <img src="../Content/image/About-title1.png" />
+                    <ul class="skill">
+                        <li><span>ILLUSTARTOR</span><span class="AI"></span></li>
+                        <li><span>PHOTOSHOP</span><span class="PS"></span></li>
+                        <li><span>HTML5</span><span class="AI"></span></li>
+                        <li><span>CSS</span><span class="CSS"></span></li>
+                        <li><span>JavaScript</span><span class="JS"></span></li>
+                        <li><span>jQuery</span><span class="jQuery"></span></li>
+                        <li><span>Ajax</span><span class="Ajax"></span></li>
+                        <li><span>C# (Front-end)</span><span class="C"></span></li>
+                        <li><span>Sass</span><span class="Sass"></span></li>
+                        <li><span>Vue.js</span><span class="Vue"></span></li>
+                        <li><span>WPF (Front-end)</span><span class="WPF"></span></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img src="../Content/image/About-title2.png" />
+                    <ul class="certificate">
+                        <li><span>Training</span><span>Interactive UI/UX employment training class (560hr)</span></li>
+                        <li><span>Toeic</span><span>590</span></li>
+                        <li><span>Photoshop</span><span>Photoshop-cc</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Amy-comic">
+                <img src="../Content/image/Amy-comic2.png" />
+            </div>
+        </div>
+    </section>
+    <!--works-->
+    <section id="section-3">
+        <div class="content container">
+            <img src="../Content/image/Left-menu.png" class="img-fluid leftmenubg" />
+            <div class="works-area d-flex flex-wrap">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="Design-tab" data-toggle="tab" href="#Design" role="tab" aria-controls="Design" aria-selected="true">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Website-tab" data-toggle="tab" href="#Website" role="tab" aria-controls="Website" aria-selected="false">Website</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Official-tab" data-toggle="tab" href="#Official" role="tab" aria-controls="Official" aria-selected="false">Official Website</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Health-tab" data-toggle="tab" href="#Health" role="tab" aria-controls="Health" aria-selected="false">Health File</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Leadership-tab" data-toggle="tab" href="#Leadership" role="tab" aria-controls="Leadership" aria-selected="false">Leadership Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Nanning-tab" data-toggle="tab" href="#Nanning" role="tab" aria-controls="Nanning" aria-selected="false">Nanning mobilesite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="NBS-tab" data-toggle="tab" href="#NBS" role="tab" aria-controls="NBS" aria-selected="false">Nanning Bidding System</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="WPF-tab" data-toggle="tab" href="#WPF" role="tab" aria-controls="WPF" aria-selected="false">Self-system(WPF)</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <!--Design-->
+                    <div class="tab-pane fade show active" id="Design" role="tabpanel" aria-labelledby="Design-tab">
+                        <ul class="designList row">
+                            <li class="col-md-2" v-for="designs in designList">
+
+                                <a data-toggle="lightbox" data-gallery="gallery" v-bind:href="'../Content/image/' + designs.image">
+                                    <img class="img-fluid" v-bind:src="'../Content/image/' + designs.image" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Website-->
+                    <div class="tab-pane fade" id="Website" role="tabpanel" aria-labelledby="Website-tab">
+                        <p>At Redmedia company, I finished many websites to increase my layout slicing, Psd to Html...</p>
+                        <div class="row websiteList">
+                            <div class="col-md-4" v-for="ww in websiteList">
+                                <a v-bind:href="ww.url" target="_blank">
+                                    <img v-bind:src="'../Content/image/'+ ww.website" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Official-->
+                    <div class="tab-pane fade" id="Official" role="tabpanel" aria-labelledby="Official-tab">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-7">
+                                <p>
+                                    This is our company’s officail website. At this time,
+                                    website needs to be technology visualize, RWD, and
+                                    convenient to update data in news page.<br />
+                                    I cooperate with Visual design and back-end developer,
+                                    through communcation to finish it.
+                                    <br />
+                                    Skill use:  HTML5,css,jquery,javascript,materialize,XML,ajax
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <a href="http://www.irhtech.com/" target="_blank">
+                                    <img src="../Content/image/Officlial-website1.png" class="img-fluid" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-5">
+                                <a href="http://healthpa.org/" target="_blank">
+                                    <img src="../Content/image/Officlial-website2.png" class="img-fluid" />
+                                </a>
+                            </div>
+                            <div class="col-md-7">
+                                <p>
+                                    This is a offical website for my boss that he created a health association to increase medical communication.I Use  vue.js and json for display and update data.
+                                    <br />
+                                    Skill use:  HTML5,css,jquery,javascript,bootstrap4,
+                                    lightbox,vue.js,json,ajax
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--health-->
+                    <div class="tab-pane fade" id="Health" role="tabpanel" aria-labelledby="Health-tab">
+                        <div class="text-center"><img src="../Content/image/Health-files.png" class="img-fluid" /></div>
+                        <p>
+                            This is first time I do a project with a small team, I cooperate with few back-end developers, include RD and SA.
+                            First, we need to search releative papers about health files rules in China.
+                            Second, we accroding this rules to make a new rule for each form.
+                            And then, I use c# codind to plan and design front-end form, although I just need to response front-end design coding, that’s a big challenge for me, because I never write c# before.
+                            <br />
+                            Skill use:  visual design, c#(front-end)
+                        </p>
+                    </div>
+                    <!--Leadership-->
+                    <div class="tab-pane fade" id="Leadership" role="tabpanel" aria-labelledby="Leadership-tab">
+                        <div class="text-center">
+                            <a href="http://183.213.59.82:58270/DashBoardNew/Account/Login" target="_blank">
+                                <img src="../Content/image/Leadership-board.png" class="img-fluid" />
+                            </a>
+                        </div>
+                        <p>
+                            This is a website to see all hospitals’s data. For visualize, I use google chart to draw it. When I decided how kind of google chart’s stytle I will use it, I research and write down list I need to back-end develper for API translate data.
+                            <br />
+                            Skill use:  visual design, HTML5, scss, javascript,  jqurey, ajax, json, vue.js, google chart
+                        </p>
+                    </div>
+                    <!--Nanning-->
+                    <div class="tab-pane fade" id="Nanning" role="tabpanel" aria-labelledby="Nanning-tab">
+                        <p>
+                            A mobilesite for Nanning system measure data. And the most difficult part is this time has person login, its divided on two ways, one way just for personal use (patient) , another way is for doctor, when doctor login, he can use keyword to search patients. Its also include chart, too. I use devexperss’s chart this time.
+                            <br />
+                            Skill use:  visual design, HTML5, scss, javascript,  jqurey, ajax, json, vue.js, devexpress chart
+                        </p>
+                        <div class="text-center">
+                            <a href="http://58.211.191.92:8096/views/Login_Doctor.aspx" target="_blank">
+                                <img src="../Content/image/Nanning-system.png" class="img-fluid" />
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--NBS-->
+                    <div class="tab-pane fade" id="NBS" role="tabpanel" aria-labelledby="NBS-tab">
+                        <div class="text-center"> <img src="../Content/image/Nanning-bidding-system.png" class="img-fluid" /></div>
+                        <p>
+                            This is a interesting experience. I never participate in bidding system before, although I am not response true system, I just make fake system to set off main system’s important.
+                            <br />
+                            Skill use:  visual design, HTML5, scss, jquery, javascript, bootrstap, json, ajax, localStorage
+                        </p>
+                    </div>
+                    <!--WPF-->
+                    <div class="tab-pane fade" id="WPF" role="tabpanel" aria-labelledby="WPF-tab">
+                        <div class="self-system">
+                            <img src="../Content/image/Self-system1.png" class="img-fluid" />
+                            <p>
+                                My supervisor give me an important mission, self-system for resident use all-in-one touch machine. I have to use WPF to write front-end part. The different between website and self-system is I need to think about how users want to do next step and he can touch screen smoothly.
+                                <br />
+                                Skill use: Planning UX, visual design, WPF(front-end)
+                            </p>
+                        </div>
+                        <div class="self-system">
+                            <div class="text-center self-system-img2"><img src="../Content/image/Self-system2.png" class="img-fluid" /></div>
+                            <p>
+                                Except for all-in-one machine, I have another self-sytem to do. It’s about a masure system, users can choose what kind items he want to measure, include blood pressure, blood sugar, body temperature. Users also can follow the measure steps to finish his measure.
+                                <br />
+                                Skill use: Planning UX, visual design, WPF(front-end)
+                            </p>
+                        </div>
+                        <div class="self-system">
+                            <img src="../Content/image/Self-system3.png" class="img-fluid" />
+                            <p>
+                                Because of convient, family doctor seems more important, espeically family doctor for self-system. Users don’t need to wait for long time, and family doctor go to their home who has sign. This time I am not only response visual design and front-end, but also introduce cotent word and picture , functions all by myself.
+                                <br />
+                                Skill use: Planning functions,  Planning UX, visual design, WPF(front-end)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact-->
+    <section id="section-4">
+        <div class="content container">
+            <img src="../Content/image/Contact-title.png" class="img-fluid contact-title" />
+            <div class="post">
+                <img src="../Content/image/Contact-post.png" class="img-fluid" />
+            </div>
+            <div class="contact">
+                <img src="../Content/image/Contact-line.png" class="img-fluid" />
+                <form>
+                    <label>Name</label><input type="text" /><br />
+                    <label>Email</label><input type="email" /><br />
+                    <label>Subject</label><input type="text" /><br />
+                    <label>Content</label><textarea cols="50" rows="5"></textarea>
+                    <p class="text-center"><input type="button" value="submit" /></p>
+                </form>
+            </div>
+            <div class="Amy-comic">
+                <img src="../Content/image/Amy-comic3.png" class="img-fluid" />
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
